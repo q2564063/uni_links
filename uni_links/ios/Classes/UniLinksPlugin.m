@@ -47,6 +47,10 @@ static id _instance;
   if (_eventSink) _eventSink(_latestLink);
 }
 
+- (void)resetLatestLink:(NSString *)latestLink{
+    [self setLatestLink:latestLink];
+}
+
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   NSURL *url = (NSURL *)launchOptions[UIApplicationLaunchOptionsURLKey];
