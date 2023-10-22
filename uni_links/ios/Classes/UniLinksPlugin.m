@@ -47,6 +47,10 @@ static id _instance;
   if (_eventSink) _eventSink(_latestLink);
 }
 
+- (void)resetInitialLink:(NSString *)initialLink{
+    self.initialLink = initialLink;
+}
+
 - (void)resetLatestLink:(NSString *)latestLink{
     [self setLatestLink:latestLink];
 }
